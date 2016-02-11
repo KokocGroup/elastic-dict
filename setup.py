@@ -8,7 +8,7 @@ except (OSError, IOError) as e:
 
 setup(
     name='elastic-dict',
-    packages=['elastic-dict'],
+    packages=['elasticdict'],
     version=VERSION,
     description="Subclass of dict() for preparing large nested structures",
     author='Alexey Ruzin',
