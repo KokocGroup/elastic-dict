@@ -2,7 +2,7 @@
 Subclass of dict for preparing large nested structures
 
 Motivation for creating this package was fatigue of preparing data for django templates.
-It is very boring to create nested dictionaries with enomorous quantity of brackets and quotas.
+It is very boring to create nested dictionaries with enomorous quantity of brackets and quotes.
 
 Instead of usual way of creating nested arrays:
 ```python
@@ -18,3 +18,15 @@ data.divisions.sales.persons[123].name = 'Alex'
 print data.divisions.sales.persons[123].name
 ```
 
+## Installation
+```sh
+pip install elastic-dict
+```
+
+## Usage
+```python
+from elasticdict import ElasticDict
+a = ElasticDict()
+a.b.c.d.e = 3
+print a
+```
