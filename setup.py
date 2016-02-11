@@ -11,6 +11,8 @@ setup(
     packages=['elastic-dict'],
     version=VERSION,
     description="Subclass of dict() for preparing large nested structures",
+    author='Alexey Ruzin'
+    author_email='ruzin@kokoc.com'
     url='https://github.com/KokocGroup/elastic-dict',
     download_url='https://github.com/KokocGroup/elastic-dict/tarball/v{0}'.format(VERSION),
     keywords=['dict', 'dictionary', 'django', 'template'],
