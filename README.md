@@ -4,18 +4,22 @@ Subclass of dict for preparing large nested structures
 Motivation for creating this package was fatigue of preparing data for django templates.
 It is very boring to create nested dictionaries with enomorous quantity of brackets and quotes.
 
-Instead of usual way of creating nested arrays:
-```python
-# creating
-data.setdefault('divisions',{}).setdefault('sales',{}).setdefault('persons',{}).setdefault(123, {})['name'] = 'Alex'
-# accessing
-print data['divisions']['sales']['persons'][123]['name']
-```
+Significant but not the only feature is automatic creation of nestes subdictionaries once acccessing them.
 
 I wish using dot-notation for both creating and accessing:
 ```python
+data = ElasticDict()
 data.divisions.sales.persons[123].name = 'Alex'
 print data.divisions.sales.persons[123].name
+```
+
+Instead of usual way of creating nested arrays:
+```python
+# creating
+data = {}
+data.setdefault('divisions',{}).setdefault('sales',{}).setdefault('persons',{}).setdefault(123, {})['name'] = 'Alex'
+# accessing
+print data['divisions']['sales']['persons'][123]['name']
 ```
 
 ## Installation
