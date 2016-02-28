@@ -1,6 +1,17 @@
 # ElasticDict
 Subclass of dict for preparing large nested structures
 
+### DISCLAIMER
+There is better analog: [addict](https://github.com/mewwts/addict).
+
+Unfortunately people [tell me about *addict*](https://github.com/KokocGroup/elastic-dict/issues/1) just after I've created such functionality by myself.
+
+I'd recommend you to use *addict* instead *elastic-dict*.
+Following content persists only for history reasons.
+
+
+## Motivation
+
 Motivation for creating this package was fatigue of preparing data for django templates.
 It is very boring to create nested dictionaries with enomorous quantity of brackets and quotes.
 
